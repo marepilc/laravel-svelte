@@ -1,0 +1,25 @@
+{
+    "semi": false,
+    "singleQuote": true,
+    "singleAttributePerLine": false,
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 150,
+    "plugins": ["prettier-plugin-svelte", "@trivago/prettier-plugin-sort-imports"],
+    "tailwindFunctions": ["clsx", "cn"],
+    "tabWidth": 2,
+    "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "overrides": [
+        {
+            "files": "**/*.yml",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.svelte",
+            "options": { "parser": "svelte" }
+        }
+    ]
+}

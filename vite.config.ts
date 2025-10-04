@@ -1,0 +1,15 @@
+import { defineConfig } from 'vite'
+import laravel from 'laravel-vite-plugin'
+import { svelte, vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: ['resources/css/app.css', 'resources/js/app.ts'],
+            refresh: true,
+        }),
+        svelte({
+            preprocess: vitePreprocess(),
+        }),
+    ],
+})
