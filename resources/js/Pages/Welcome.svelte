@@ -13,3 +13,9 @@
         >Laravel documentation</a
     >.
 </p>
+{#if route().has('welcome') }
+    <p>
+        You can also access this page by visiting the
+        <code>{route('welcome')}</code> route.
+    </p>
+{/if}

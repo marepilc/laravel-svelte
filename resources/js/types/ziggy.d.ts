@@ -1,0 +1,13 @@
+import { Config as ZiggyConfig } from 'ziggy-js'
+
+declare global {
+    interface Window {
+        Ziggy: ZiggyConfig
+        route: typeof import('ziggy-js').route
+    }
+
+    const route: typeof import('ziggy-js').route
+    const Ziggy: ZiggyConfig
+}
+
+export {}
